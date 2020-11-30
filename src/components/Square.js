@@ -1,9 +1,9 @@
 const Square = ({ name, selected, handleClick }) => (
     <div
         style={{
+            background : selected ? "green" : "hotpink", 
             width: 200, 
             height : 200,
-            background : selected ? "green" : "hotpink", 
         }}
         onClick={ handleClick }
     />
