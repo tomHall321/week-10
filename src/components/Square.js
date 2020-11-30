@@ -1,7 +1,7 @@
-const Square = ({ name, selected, handleClick }) => (
+const Square = ({ name, selected, handleClick, colour }) => (
     <div
         style={{
-            background : selected ? "green" : "hotpink", 
+            background : selected ? "green" : colour, 
             width: 200, 
             height : 200,
         }}
