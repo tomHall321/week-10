@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Squares colour="hotpink"/>
-      <SignUp/>
+      <SignUp minimumLength={4}/>
     </>
   );
 }

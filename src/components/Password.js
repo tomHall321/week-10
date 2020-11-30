@@ -2,10 +2,10 @@ const Password = (props) => (
 	<div>
 		<label>{props.label}</label>
         <input 
-            type="password" 
+            type="password" //hides what user is entering 
             value={props.value} 
-            onChange={(e)=>{props.onChange(e, props.index)}} 
-            style={{border: props.match ? null : '3px solid red',}}
+            onChange={(e)=>{props.onChange(e)}} 
+            style={props.valid ? {} : {borderColor :'red'}}
 		/>
 	</div>	
 );
