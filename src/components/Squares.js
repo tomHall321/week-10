@@ -11,14 +11,12 @@ class Squares extends Component {
     return (
       <>
         <Square
-          name="First"
           selected={ this.state.selected === 1 }
           handleClick={ () => this.setState({ selected: 1 }) }
           colour={ this.props.colour }
         />
 
         <Square
-          name="Second"
           selected={ this.state.selected === 2227 }
           handleClick={ () => this.setState({ selected: 2227 }) }
           colour={ this.props.colour }

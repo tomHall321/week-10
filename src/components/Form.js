@@ -43,7 +43,8 @@ class Form extends Component {
                         class="form-control" 
                         id="name" 
                         type="text"
-                        onChange={ this.nameUpdate } />
+                        onChange={ this.nameUpdate }
+                        value= {this.state.name} />
                 </div>
                 <div class="form-group">
                     <label 
@@ -54,7 +55,8 @@ class Form extends Component {
                         class="form-control" 
                         id="email" 
                         type="text"
-                        onChange={ this.emailUpdate } />
+                        onChange={ this.emailUpdate }
+                        value= {this.state.email} />
                 </div>
                 <button>
                     Submit

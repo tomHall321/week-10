@@ -1,11 +1,12 @@
-const Password = (props) => (
+const Password = ({label, value, onChange, valid}) => (
+
 	<div>
-		<label>{props.label}</label>
+		<label>{label}</label>
         <input 
             type="password" //hides what user is entering 
-            value={props.value} 
-            onChange={(e)=>{props.onChange(e)}} 
-            style={props.valid ? {} : {borderColor :'red'}}
+            value={value} 
+            onChange={onChange} 
+            style={valid ? {} : {borderColor :'red'}}
 		/>
 	</div>	
 );

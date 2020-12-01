@@ -28,7 +28,7 @@ class SignUp extends Component {
                     label="Password" 
                     value={this.state.password} 
                     onChange={(e) => {
-                            this.setState({password : e.target.value})
+                            this.setState({password : e.currentTarget.value})
                         }
                     } 
                     valid={valid}
@@ -38,7 +38,7 @@ class SignUp extends Component {
                     label="Confirm password" 
                     value={this.state.confirm} 
                     onChange={(e) => {
-                        this.setState({confirm : e.target.value})
+                        this.setState({confirm : e.currentTarget.value})
                         }
                     }  
                     valid={valid}
