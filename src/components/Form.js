@@ -34,25 +34,25 @@ class Form extends Component {
     render() {
         return (
             <form onSubmit={ this.formSubmit } >
-                <div class="form-group">
+                <div className="form-group">
                     <label 
-                        for="name">
+                        htmlFor="name">
                         Name
                     </label>
                     <input 
-                        class="form-control" 
+                        className="form-control" 
                         id="name" 
                         type="text"
                         onChange={ this.nameUpdate }
                         value= {this.state.name} />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label 
-                        for="name">
+                        htmlFor="name">
                         Email
                     </label>
                     <input 
-                        class="form-control" 
+                        className="form-control" 
                         id="email" 
                         type="text"
                         onChange={ this.emailUpdate }

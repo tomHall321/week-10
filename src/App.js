@@ -1,16 +1,28 @@
-import Squares from "./components/Squares.js";
-import SignUp from "./components/SignUp.js";
-import Button from "./components/Button.js";
-import Form from "./components/Form.js";
+import Articles from "./news/Articles.js";
+import Article from "./news/Article.js";
+import CreateArticle from "./news/CreateArticle.js";
+import {
+  BrowserRouter as Router, 
+  Route,
+  Switch,
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Squares colour="hotpink"/>
-      <SignUp minimumLength={4}/>
-      <Button handleUpdate={ (value) => console.log(value) } />
-      <Form handleSubmit={ (value) => console.log(value) } />
-    </>
+    <Router>
+      <Switch>
+        <Route exact path="/news/create">
+          <CreateArticle />
+        </Route>
+        <Route exact path="/news/">
+          <Articles />
+        </Route>
+        <Route path="/news/:id" render={ ({ match }) => (
+          <Article id={ match.params.id } />
+        ) } 
+        />
+      </Switch>
+    </Router>
   );
 }
 
