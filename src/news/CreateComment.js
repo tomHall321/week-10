@@ -29,10 +29,12 @@ class CreateComment extends Component {
         let { id } = this.props;
 
         axios.post(`/articles/${id}/comments`, {
-                email: email,  
-                comment: comment,
-            });
-        }
+            email: email,  
+            comment: comment,
+        }).then(({data}) => {
+            this.setState({email: "", comment: ""});
+        })
+    }
     
     render() {
 

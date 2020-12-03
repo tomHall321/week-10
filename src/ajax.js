@@ -1,5 +1,5 @@
 // import axios with configuration
-import axios from "./axios";
+// import axios from "./axios";
 
 // axios.get("/articles").then(({data}) => console.log(data.data));
 

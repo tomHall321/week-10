@@ -36,7 +36,9 @@ class CreateArticle extends Component {
                 title: title,  
                 content: content,
                 tags: tags.split(" , "),
-            });
+            }).then(({data}) => {
+                this.setState({title: "", content: "", tags: ""});
+            })
         }
     
     render() {
