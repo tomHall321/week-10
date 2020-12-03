@@ -8,14 +8,14 @@ const StepCounter = ({ max, step }) => {
     return (
         <>
         <p>
-            { count }
+            {count}
         </p>
         <button 
-            onClick={ handleClickDecrement }>
+            onClick={handleClickDecrement}>
             -
         </button>
         <button 
-            onClick={ handleClickIncrement }>
+            onClick={handleClickIncrement}>
             +
         </button>
     </>
